@@ -12,7 +12,7 @@ SCREEN_Y = 600
 class Snake(object):
     # 初始化各种需要的属性 [开始时默认向右/身体块x5]
     def __init__(self):
-        self.dirction = pygame.K_RIGHT
+        self.direction = pygame.K_RIGHT
         self.body = []
         for x in range(5):
             self.addnode()
@@ -23,13 +23,13 @@ class Snake(object):
         if self.body:
             left, top = (self.body[0].left, self.body[0].top)
         node = pygame.Rect(left, top, 25, 25)
-        if self.dirction == pygame.K_LEFT:
+        if self.direction == pygame.K_LEFT:
             node.left -= 25
-        elif self.dirction == pygame.K_RIGHT:
+        elif self.direction == pygame.K_RIGHT:
             node.left += 25
-        elif self.dirction == pygame.K_UP:
+        elif self.direction == pygame.K_UP:
             node.top -= 25
-        elif self.dirction == pygame.K_DOWN:
+        elif self.direction == pygame.K_DOWN:
             node.top += 25
         self.body.insert(0, node)
 
@@ -59,11 +59,11 @@ class Snake(object):
         LR = [pygame.K_LEFT, pygame.K_RIGHT]
         UD = [pygame.K_UP, pygame.K_DOWN]
         if curkey in LR + UD:
-            if (curkey in LR) and (self.dirction in LR):
+            if (curkey in LR) and (self.direction in LR):
                 return
-            if (curkey in UD) and (self.dirction in UD):
+            if (curkey in UD) and (self.direction in UD):
                 return
-            self.dirction = curkey
+            self.direction = curkey
 
 
 # 食物类

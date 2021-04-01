@@ -261,3 +261,8 @@ Thumbs.db #thumbnail cache on Windows
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,vscode
+.idea/vcs.xml
+.idea/PyWorks.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
