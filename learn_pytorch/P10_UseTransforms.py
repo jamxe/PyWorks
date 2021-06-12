@@ -1,3 +1,11 @@
+'''
+Version      : 1.0
+Autor        : jamyxe
+Created on   : 2021-06-12 18:04:51
+Last Modified: 2021-06-12 18:05:40
+FilePath     : /undefinedd:/GitHub/PyWorks/learn_pytorch/P10_UseTransforms.py
+Description  : 
+'''
 # -*- coding: utf-8 -*-
 """
 @Project : learn_pytorch
@@ -54,8 +62,3 @@ for i in range(1, 10):
 
 
 writer.close()
-
-test.new()
-
-from PIL import Image
-
