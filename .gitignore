@@ -266,3 +266,8 @@ Thumbs.db #thumbnail cache on Windows
 .idea/modules.xml
 .idea/misc.xml
 .idea/inspectionProfiles/profiles_settings.xml
+
+events.*
+*.0
+*.gz
+*data_batch*
