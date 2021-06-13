@@ -17,10 +17,10 @@ from PIL import Image
 # 1、 transforms英如何使用( python)
 # 2、为什么我们需要 Tensor据类型
 
-img_path = r"dataset/train/ants_image/0013035.jpg"
+img_path = r"../dataset/train/ants_image/0013035.jpg"
 img = Image.open(img_path)
 
-writer = SummaryWriter("logs")
+writer = SummaryWriter("../logs")
 
 #  1. transforms如何使用
 tensor_trans = transforms.ToTensor()

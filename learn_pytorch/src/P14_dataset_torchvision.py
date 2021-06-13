@@ -27,7 +27,7 @@ test_set = torchvision.datasets.CIFAR10(root="./dataset", train=False, transform
 # print(train_set[0])
 
 #  使用tensorboard
-writer = SummaryWriter("p10_logs")
+writer = SummaryWriter("../p10_logs")
 for i in range(1, 10):
     img, target = test_set[i]
     writer.add_image("test_set", img, i)

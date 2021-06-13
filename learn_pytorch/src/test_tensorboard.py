@@ -11,8 +11,8 @@ from torch.utils.tensorboard import SummaryWriter  # 查看一下help，按住Ct
 import numpy as np
 from PIL import Image
 
-writer = SummaryWriter("logs")
-img_path = r"dataset/train/ants_image/0013035.jpg"
+writer = SummaryWriter("../logs")
+img_path = r"../dataset/train/ants_image/0013035.jpg"
 img_PIL = Image.open(img_path)
 img_array = np.array(img_PIL)
 print(type(img_array))
